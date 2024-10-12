@@ -20,7 +20,7 @@ Building on the insight of significant similarity between successive NeRFs, we p
   </a>
 </p>
 
-We adapted an efficient and scalable model compression scheme, LC-Checkpoint, in our proposed compression pipeline.
+We adapted an efficient and scalable model compression scheme, LC-Checkpoint, in our proposed compression pipeline. LC-Checkpoint is a model compression scheme that leverages the redundancy in the model parameters to achieve high compression rates. We adapt LC-Checkpoint to compress the sequence of NeRFs, which are the core components of our volumetric video representation.
 
 
 ## Instructions
@@ -62,7 +62,7 @@ where `COMPRESSED_SAVELOC` is the directory of the compressed sequence, `dec_mod
 
 ### Example
 
-We provide an example ipynb file `example.ipynb` to compress and decompress an example sequence of NeRFs. The example NeRFs were trained by following the proposed pipeline on a dynamic point cloud `RedAndBlack` from [8iVFB Dataset](http://plenodb.jpeg.org/pc/8ilabs/). 
+We provide an example ipynb file `example.ipynb` to compress and decompress an example sequence of NeRFs. The example NeRFs were trained by following the proposed training pipeline on dynamic point clouds `RedAndBlack` from [8iVFB Dataset](http://plenodb.jpeg.org/pc/8ilabs/). 
 
 ## Reference
 
@@ -72,7 +72,7 @@ We provide an example ipynb file `example.ipynb` to compress and decompress an e
 
 If you find this code useful for your research, please consider citing the following paper:
 
-```latex
+```bibtex
 @inproceedings{shi2024volumetric,
   title={Volumetric Video Compression Through Neural-based Representation},
   author={Shi, Yuang and Zhao, Ruoyu and Gasparini, Simone and Morin, G{\'e}raldine and Ooi, Wei Tsang},
@@ -81,3 +81,12 @@ If you find this code useful for your research, please consider citing the follo
   year={2024}
 }
 ```
+
+## Acknowledgement
+
+We thank Yeo Shu Heng for the helpful participation on this implementation.
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
